@@ -8,7 +8,7 @@ Only for Google Chrome on MacOS for now. Will add options for other operating sy
 
 ### Google Chrome on MacOS 
 
-#### Getting the script to work 
+#### →Getting the script to work 
 You will need python on your system. 
 
 MacOS users can use [Homebrew](https://brew.sh/) to [install python](https://formulae.brew.sh/formula/python@3.9).
@@ -42,7 +42,7 @@ Run ```python3 main.py``` in the directory. The script is working if:
 
 with no issues. This process should take ~20-30 seconds.
 
-#### Running the script hands-free every morning 
+#### →Running the script hands-free every morning 
 
 MacOS comes with [cron](https://en.wikipedia.org/wiki/Cron) which we will use to schedule this script to run every morning. 
 
