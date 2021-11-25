@@ -8,13 +8,25 @@ Only for MacOS for now, but will make a guide for Windows users as well.
 
 ### MacOS 
 
-In the directory, make a .env file with USERNAME, PASSWORD, and CONSENT_NAME. Example:
+You will need python on your system. 
 
-USERNAME="fake_username"
+MacOS users can use [https://brew.sh/](Homebrew) to [https://formulae.brew.sh/formula/python@3.9](install python).
 
-PASSWORD="fake_password"
+Once python is installed, install the necessary packages: 
 
-CONSENT_NAME="fake_name"
+pip3 install selenium 
+
+pip3 install python-dotenv
+
+
+In the directory, make a .env file with USERNAME, PASSWORD, and CONSENT_NAME. USERNAME should be the account username, PASSWORD should be the account password, and CONSENT_NAME should be the account owner's name. Example: 
+
+```
+USERNAME="JohnDoe5"
+PASSWORD="DefinatelyMyPassword123"
+CONSENT_NAME="John Doe"
+```
+
 
 ## TODO 
 
