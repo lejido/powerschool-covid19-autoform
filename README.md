@@ -62,7 +62,7 @@ Lastly, feel free to uncomment the line ```chrome_options.add_argument("--headle
 
 Keep in mind that your device must be on for the cron job to actually do anything. If you set the script to run at 5AM, and you're usually sleeping at that time, one thing you can do is schedule your Mac to wake up right before the script runs. More on that [here](https://support.apple.com/en-za/guide/mac-help/mchlp2266/mac). 
 
-**PLEASE DO NOT FORGET TO UPDATE THE FORM IF YOU DO SHOW ANY SYMPTOMS. If at any time you don't want the script by itself anymore, enter in terminal ```crontab -e``` and just remove the crontab.**
+**PLEASE DO NOT FORGET TO UPDATE THE FORM IF YOU DO SHOW ANY SYMPTOMS. If at any time you don't want the script to run by itself anymore, enter in terminal ```crontab -e``` and just remove the crontab.**
 
 ## TODO 
 - Option for users to manually run script remotely (maybe from phone?) 
