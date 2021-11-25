@@ -4,15 +4,16 @@ Tired of filling out the Powerschool COVID-19 symptoms form when you're healthy?
 
 ## Setup 
 
-Only for MacOS for now, but will make a guide for Windows users as well. 
+Only for Google Chrome on MacOS for now. Will add options for other operating systems and browsers later. 
 
-### MacOS 
+### Google Chrome on MacOS 
 
 You will need python on your system. 
 
-MacOS users can use [https://brew.sh/](Homebrew) to [https://formulae.brew.sh/formula/python@3.9](install python).
+MacOS users can use [Homebrew](https://brew.sh/) to [install python](https://formulae.brew.sh/formula/python@3.9).
 
-Once python is installed, install the necessary packages: 
+Once python is installed, install the necessary packages in terminal: 
+
 ```
 pip3 install selenium 
 pip3 install python-dotenv
@@ -25,6 +26,14 @@ USERNAME="JohnDoe5"
 PASSWORD="DefinatelyMyPassword123"
 CONSENT_NAME="John Doe"
 ```
+
+Run ```python3 main.py``` in the directory. The script is working if: 
+1. A Google Chrome window appears and opens Powerschool, 
+2. Signs in, 
+3. Goes to the proper form, 
+4. Fills out the empty entries, 
+5. Submits
+with no issues. This process should take ~20-30 seconds.
 
 
 
