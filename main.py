@@ -12,7 +12,7 @@ from selenium.webdriver.chrome.service import Service
 s = Service('/usr/local/bin/chromedriver') 
 
 chrome_options = Options()
-# chrome_options.add_argument("--headless") # comment line if you want to see browser window   
+#chrome_options.add_argument("--headless") # uncomment line to remove visual aspect 
 
 driver = webdriver.Chrome(service=s, options=chrome_options) 
 driver.get('https://ps001.bergen.org/public/')
