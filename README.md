@@ -66,7 +66,7 @@ Keep in mind that your device must be on for the cron job to actually do anythin
 
 ## TODO 
 - Option for users to manually run script remotely (maybe from phone?) 
-- Notifying users of errors that occured if script failed to run completely (email? text?) 
+- Notifying users of errors that occured if script failed to run completely (email? text? looks like error messages are going to /var/mail)
 - Notifying users of successful runs 
 - Options for differnt OS and browsers 
 - Better README 
