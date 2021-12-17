@@ -9,18 +9,18 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 
-s = Service('/usr/local/bin/chromedriver') 
-
-chrome_options = Options()
-#chrome_options.add_argument("--headless") # uncomment line to remove visual aspect 
-
-driver = webdriver.Chrome(service=s, options=chrome_options) 
-driver.get('https://ps001.bergen.org/public/')
-
 load_dotenv()
 
 username = os.environ.get('USERNAME')
 password = os.environ.get('PASSWORD') 
+
+s = Service('/usr/local/bin/chromedriver') 
+
+chrome_options = Options()
+chrome_options.add_argument("--headless") # comment line to remove visual aspect 
+
+driver = webdriver.Chrome(service=s, options=chrome_options) 
+driver.get('https://ps001.bergen.org/public/')
 
 driver.find_element(By.ID, 'fieldAccount').send_keys(username) 
 driver.find_element(By.ID, 'fieldPassword').send_keys(password) 

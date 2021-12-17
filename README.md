@@ -8,23 +8,18 @@ Only for Google Chrome on MacOS for now. Will add options for other operating sy
 
 ### Google Chrome on MacOS 
 
-#### →Getting the script to work 
-You will need python on your system. 
-
-MacOS users can use [Homebrew](https://brew.sh/) to [install python](https://formulae.brew.sh/formula/python@3.9).
-
-Once python is installed, install the necessary packages in terminal: 
+#### →Dependencies 
+You will need chromedriver and python3. 
+You will also need selenium and python-dotenv: 
 
 ```
 pip3 install selenium 
 pip3 install python-dotenv
 ```
 
-You also need to [get chromedriver](https://formulae.brew.sh/cask/chromedriver). Same process as installing python with homebrew. 
-
-Download the zip of this repository and unzip it. I recommend you to put the folder inside your home directory. 
-
-In the directory containing the script, make an .env file with USERNAME, PASSWORD, and CONSENT_NAME. USERNAME should be the account username, PASSWORD should be the account password, and CONSENT_NAME should be the account owner's name. Example: 
+#### →Running the script 
+Clone the repo, then make an .env file in the directory. 
+Example .env file: 
 
 ```
 USERNAME="JohnDoe5"
@@ -32,17 +27,9 @@ PASSWORD="DefinatelyMyPassword123"
 CONSENT_NAME="John Doe"
 ```
 
-Run ```python3 main.py``` in the directory. The script is working if: 
+Run ```python3 main.py```. Check your form logs after 20-30 seconds to see if the script worked.
 
-1. A Google Chrome window appears and opens Powerschool, 
-2. It signs in, 
-3. Goes to the proper form, 
-4. Fills out the empty entries, 
-5. Submits
-
-with no issues. This process should take ~20-30 seconds.
-
-#### →Running the script hands-free every morning 
+#### →Running the script hands-free every morning (still under development)  
 
 MacOS comes with [cron](https://en.wikipedia.org/wiki/Cron) which we will use to schedule this script to run every morning. 
 
@@ -64,12 +51,11 @@ Keep in mind that your device must be on for the cron job to actually do anythin
 
 **PLEASE DO NOT FORGET TO UPDATE THE FORM IF YOU DO SHOW ANY SYMPTOMS. If at any time you don't want the script to run by itself anymore, enter in terminal ```crontab -e``` and just remove the crontab.**
 
-## TODO 
+## TODO
+- Implement notification system 
+  - https://www.quora.com/How-can-I-send-a-push-notification-to-my-Android-phone-with-a-Python-script
+  - https://notify.run/
 - Option for users to manually run script remotely (maybe from phone?) 
-- Notifying users of errors that occured if script failed to run completely (email? text? looks like error messages are going to /var/mail)
-- Notifying users of successful runs 
 - Options for differnt OS and browsers 
-- Better README 
 - Easier setup for non-technical users
-- OK PATH TO DIRECTORIES MAY BE DIFF BUT IDK IF THAT WILL BE A PROBLEM ATM 
 
