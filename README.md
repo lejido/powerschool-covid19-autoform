@@ -52,6 +52,8 @@ Keep in mind that your device must be on for the cron job to actually do anythin
 **PLEASE DO NOT FORGET TO UPDATE THE FORM IF YOU DO SHOW ANY SYMPTOMS. If at any time you don't want the script to run by itself anymore, enter in terminal ```crontab -e``` and just remove the crontab.**
 
 ## TODO
+
+update: this project is no longer fun for me; I'll only add features if requested / are interesting 
 - Implement notification system 
   - https://www.quora.com/How-can-I-send-a-push-notification-to-my-Android-phone-with-a-Python-script
   - https://notify.run/
